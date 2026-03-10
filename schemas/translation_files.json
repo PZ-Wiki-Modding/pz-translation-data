@@ -12,15 +12,11 @@
       "type": "string",
       "description": "A brief description of the translation file." 
     },
-    "filePrefix": { 
+    "fileName": {
       "type": "string",
-      "description": "The prefix used for the translation files." 
+      "description": "The name of the translation file."
     },
-    "fileStarter": { 
-      "type": "string",
-      "description": "The starting point for the translation files." 
-    },
-    "keyPrefix": {
+    "keyPrefix": { 
       "type": "string",
       "description": "The prefix used for the keys in the translation files."
     }
