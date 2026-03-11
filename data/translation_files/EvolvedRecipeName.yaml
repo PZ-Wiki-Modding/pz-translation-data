@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=../../schemas/translation_files.json
+
 version: 1
 name: EvolvedRecipeName
 description: Translations for evolved recipe scripts.
