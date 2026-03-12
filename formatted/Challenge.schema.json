@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Challenge.json Schema",
+    "description": "Challenge scenarios with Challenge_{ScenarioId}_{property} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Challenge_[A-Za-z0-9\\s]+(_[A-Za-z0-9]+|InfoBox)$": {
+            "type": "string",
+            "description": "Pattern: Challenge_{ScenarioId}_{property} or Challenge_{ScenarioId}InfoBox\n(e.g., Challenge_YouHaveOneDay_name, Challenge_OpeningHoursInfoBox)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

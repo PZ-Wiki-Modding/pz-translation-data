@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "SurvivalGuide.json Schema",
+    "description": "Survival guide with SurvivalGuide_entrie{num}{property} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^SurvivalGuide_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: SurvivalGuide_{entryName}\n(e.g., SurvivalGuide_entrie1title, SurvivalGuide_Joypad_entrie10moreinfo)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

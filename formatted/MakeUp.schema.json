@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "MakeUp.json Schema",
+    "description": "MakeUp categories/types with MakeUp(Category|Type)_{Name} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^MakeUp(Category|Type)_[A-Za-z0-9]+$": {
+            "type": "string",
+            "description": "Pattern: MakeUpCategory/Type_{Name}\n(e.g., MakeUpCategory_Eyes, MakeUpType_EyesCamo1)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

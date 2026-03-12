@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "BodyParts.json Schema",
+    "description": "Body parts with BODYPART_{PARTNAME} pattern in uppercase",
+    "type": "object",
+    "patternProperties": {
+        "^BODYPART_[A-Z_]+$": {
+            "type": "string",
+            "description": "Pattern: BODYPART_{PARTNAME}\n(e.g., BODYPART_HEAD, BODYPART_LEFT_UPPER_ARM)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

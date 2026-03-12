@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "RadioData.json Schema",
+    "description": "Radio data with RD_{UUID} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^RD_[a-f0-9-]+$": {
+            "type": "string",
+            "description": "Pattern: RD_{UUID}\n(e.g., RD_b0ee632b-789e-4e4f-a2b0-b09374856a62)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

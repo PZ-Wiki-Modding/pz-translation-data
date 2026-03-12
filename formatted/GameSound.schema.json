@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "GameSound.json Schema",
+    "description": "Game sounds with GameSound_{SoundName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^GameSound_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: GameSound_{SoundName}\n(e.g., GameSound_AlarmClockRingingLoop, GameSound_AmbientMusic_BrassAmbient)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

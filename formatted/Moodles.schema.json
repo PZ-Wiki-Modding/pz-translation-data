@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Moodles.json Schema",
+    "description": "Status effects with Moodles_{Type}_lvl{Level} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Moodles_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: Moodles_{Type}(_{desc})?_lvl{Level}\n(e.g., Moodles_Endurance_lvl1, Moodles_Angry_desc_lvl1)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ContextMenu.json Schema",
+    "description": "Context menu actions with ContextMenu_{ActionName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^[A-Za-z0-9_\\s/]+$": {
+            "type": "string",
+            "description": "Pattern: ContextMenu_{ActionName} or other context menu keys\n(e.g., ContextMenu_Destroy, ContextMenu_EvolvedRecipe_Roasted Vegetables, Puddle)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

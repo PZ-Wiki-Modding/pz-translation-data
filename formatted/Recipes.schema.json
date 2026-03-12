@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Recipes.json Schema",
+    "description": "Recipe names in PascalCase",
+    "type": "object",
+    "patternProperties": {
+        "^[A-Za-z0-9_\\(\\): -]+$": {
+            "type": "string",
+            "description": "Pattern: {RecipeName}\n(e.g., MakeBiscuits, base:barley growing season)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

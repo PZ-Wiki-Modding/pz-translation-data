@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Location Files Schema (Generic)",
+    "description": "For West Point, Rosewood, Riverside, Muldraugh, Echo Creek KY.json files",
+    "type": "object",
+    "patternProperties": {
+        "^[A-Za-z_][A-Za-z0-9_]*$": {
+            "type": "string",
+            "description": "Location-specific POI names\n(e.g., Generic)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

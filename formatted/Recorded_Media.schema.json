@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Recorded_Media.json Schema",
+    "description": "Recorded media with RM_{PropertyName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^RM_[A-Za-z0-9_-]+$": {
+            "type": "string",
+            "description": "Pattern: RM_{PropertyName} or UUID\n(e.g., RM_Generic, RM_0012f83d-0d02-49f7-9b89-7eb17fafbc9c)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

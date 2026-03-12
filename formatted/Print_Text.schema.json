@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Print_Text.json Schema",
+    "description": "Print text with Print_Text_{MediaName}_{property} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Print_Text_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: Print_Text_{MediaName}_{property}\n(e.g., Print_Text_KnoxKnews_July1_title)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

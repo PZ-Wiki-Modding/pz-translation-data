@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Stash.json Schema",
+    "description": "Stash locations with Stash_{LocationCode}_{ItemKey} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Stash_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: Stash_{LocationCode}_{ItemKey}\n(e.g., Stash_LVMap1_Text1, Stash_AnnotedMap)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

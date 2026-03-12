@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Fluids.json Schema",
+    "description": "Fluids with Fluid_{ActionOrProperty} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Fluid_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: Fluid_{ActionOrProperty}\n(e.g., Fluid_Transfer, Fluid_Category_Water)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

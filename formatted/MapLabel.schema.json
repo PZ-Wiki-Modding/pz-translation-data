@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "MapLabel.json Schema",
+    "description": "Map location labels with MapLabel_{LocationName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^MapLabel_[A-Za-z]+$": {
+            "type": "string",
+            "description": "Pattern: MapLabel_{LocationName}\n(e.g., MapLabel_Brandenburg, MapLabel_Riverside)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

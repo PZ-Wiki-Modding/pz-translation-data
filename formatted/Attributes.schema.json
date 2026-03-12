@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Attributes.json Schema",
+    "description": "Attributes with Attributes_Type_{AttributeName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Attributes_Type_[A-Za-z_]+$": {
+            "type": "string",
+            "description": "Pattern: Attributes_Type_{AttributeName}\n(e.g., Attributes_Type_Quality, Attributes_Type_Durability)"
+        },
+        "^Attributes_ToosltipOverride_[A-Za-z_]+$": {
+            "type": "string",
+            "description": "Tooltip overrides\nPattern: Attributes_TooltipOverride_{AttributeName}\n(e.g., Attributes_TooltipOverride_Durability)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

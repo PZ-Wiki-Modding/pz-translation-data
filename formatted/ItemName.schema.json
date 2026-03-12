@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ItemName.json Schema",
+    "description": "Item identifiers with {ModuleName}.{ItemCodeName} format",
+    "type": "object",
+    "patternProperties": {
+        "^[A-Za-z_][A-Za-z0-9_]*\\.[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: {ModuleName}.{ItemCodeName}\n(e.g., Base.Apple, Base.AssaultRifle)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

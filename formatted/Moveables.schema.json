@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Moveables.json Schema",
+    "description": "Furniture with flexible {FurnitureNameSnakeCase} naming",
+    "type": "object",
+    "patternProperties": {
+        "^[A-Za-z0-9_!\\s]+$": {
+            "type": "string",
+            "description": "Pattern: {FurnitureNameSnakeCase}\n(e.g., 50s_Barstool, Aaaaah!_Painting)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

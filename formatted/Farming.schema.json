@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Farming.json Schema",
+    "description": "Crops with Farming_{CropName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Farming_[A-Za-z0-9_\\s-]+$": {
+            "type": "string",
+            "description": "Pattern: Farming_{Key}\n(e.g., Farming_Carrots, Farming_Seed-bearing)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

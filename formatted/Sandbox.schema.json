@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Sandbox.json Schema",
+    "description": "Sandbox options with Sandbox_{OptionName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Sandbox_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: Sandbox_{OptionName}\n(e.g., Sandbox_PopulationOptions, Sandbox_ActiveOnly_option1)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

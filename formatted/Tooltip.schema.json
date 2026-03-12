@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Tooltip.json Schema",
+    "description": "Tooltips with Tooltip_{category}_{key} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^Tooltip_[A-Za-z0-9_]+$": {
+            "type": "string",
+            "description": "Pattern: Tooltip_{category}_{key}\n(e.g., Tooltip_food_Bowl, Tooltip_AddPaddingToAll)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}
