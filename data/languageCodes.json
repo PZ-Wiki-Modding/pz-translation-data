@@ -1,87 +1,7 @@
 {
-  "AR": {
-    "name": "AR",
-    "languageName": "Espanol (AR) - Argentina Spanish",
-    "encoding": "UTF-8"
-  },
-  "CA": {
-    "name": "CA",
-    "languageName": "Catalan",
-    "encoding": "UTF-8"
-  },
-  "CH": {
-    "name": "CH",
-    "languageName": "Traditional Chinese",
-    "encoding": "UTF-8"
-  },
-  "CN": {
-    "name": "CN",
-    "languageName": "Simplified Chinese",
-    "encoding": "UTF-8"
-  },
-  "CS": {
-    "name": "CS",
-    "languageName": "Czech",
-    "encoding": "UTF-8"
-  },
-  "DA": {
-    "name": "DA",
-    "languageName": "Danish",
-    "encoding": "UTF-8"
-  },
-  "DE": {
-    "name": "DE",
-    "languageName": "Deutsch - German",
-    "encoding": "UTF-8"
-  },
   "EN": {
     "name": "EN",
     "languageName": "English",
-    "encoding": "UTF-8"
-  },
-  "ES": {
-    "name": "ES",
-    "languageName": "Espanol (ES) - Spanish",
-    "encoding": "UTF-8"
-  },
-  "FI": {
-    "name": "FI",
-    "languageName": "Finnish",
-    "encoding": "UTF-8"
-  },
-  "FR": {
-    "name": "FR",
-    "languageName": "Francais - French",
-    "encoding": "UTF-8"
-  },
-  "HU": {
-    "name": "HU",
-    "languageName": "Hungarian",
-    "encoding": "UTF-8"
-  },
-  "ID": {
-    "name": "ID",
-    "languageName": "Indonesia",
-    "encoding": "UTF-8"
-  },
-  "IT": {
-    "name": "IT",
-    "languageName": "Italiano",
-    "encoding": "UTF-8"
-  },
-  "JP": {
-    "name": "JP",
-    "languageName": "Japanese",
-    "encoding": "UTF-8"
-  },
-  "KO": {
-    "name": "KO",
-    "languageName": "Korean",
-    "encoding": "UTF-8"
-  },
-  "NL": {
-    "name": "NL",
-    "languageName": "Nederlands - Dutch",
     "encoding": "UTF-8"
   },
   "NO": {
@@ -89,19 +9,9 @@
     "languageName": "Norsk - Norwegian",
     "encoding": "UTF-8"
   },
-  "PH": {
-    "name": "PH",
-    "languageName": "Tagalog - Filipino",
-    "encoding": "UTF-8"
-  },
-  "PL": {
-    "name": "PL",
-    "languageName": "Polish",
-    "encoding": "UTF-8"
-  },
-  "PT": {
-    "name": "PT",
-    "languageName": "Portuguese",
+  "ID": {
+    "name": "ID",
+    "languageName": "Indonesia",
     "encoding": "UTF-8"
   },
   "PTBR": {
@@ -109,14 +19,34 @@
     "languageName": "Brazilian Portuguese",
     "encoding": "UTF-8"
   },
-  "RO": {
-    "name": "RO",
-    "languageName": "Romanian",
+  "PT": {
+    "name": "PT",
+    "languageName": "Portuguese",
     "encoding": "UTF-8"
   },
-  "RU": {
-    "name": "RU",
-    "languageName": "Russian",
+  "JP": {
+    "name": "JP",
+    "languageName": "Japanese",
+    "encoding": "UTF-8"
+  },
+  "CA": {
+    "name": "CA",
+    "languageName": "Catalan",
+    "encoding": "UTF-8"
+  },
+  "ES": {
+    "name": "ES",
+    "languageName": "Espanol (ES) - Spanish",
+    "encoding": "UTF-8"
+  },
+  "CN": {
+    "name": "CN",
+    "languageName": "Simplified Chinese",
+    "encoding": "UTF-8"
+  },
+  "CH": {
+    "name": "CH",
+    "languageName": "Traditional Chinese",
     "encoding": "UTF-8"
   },
   "TH": {
@@ -124,9 +54,79 @@
     "languageName": "Thai",
     "encoding": "UTF-8"
   },
+  "NL": {
+    "name": "NL",
+    "languageName": "Nederlands - Dutch",
+    "encoding": "UTF-8"
+  },
+  "HU": {
+    "name": "HU",
+    "languageName": "Hungarian",
+    "encoding": "UTF-8"
+  },
   "TR": {
     "name": "TR",
     "languageName": "Turkish",
+    "encoding": "UTF-8"
+  },
+  "PL": {
+    "name": "PL",
+    "languageName": "Polish",
+    "encoding": "UTF-8"
+  },
+  "FR": {
+    "name": "FR",
+    "languageName": "Francais - French",
+    "encoding": "UTF-8"
+  },
+  "KO": {
+    "name": "KO",
+    "languageName": "Korean",
+    "encoding": "UTF-8"
+  },
+  "RU": {
+    "name": "RU",
+    "languageName": "Russian",
+    "encoding": "UTF-8"
+  },
+  "DE": {
+    "name": "DE",
+    "languageName": "Deutsch - German",
+    "encoding": "UTF-8"
+  },
+  "DA": {
+    "name": "DA",
+    "languageName": "Danish",
+    "encoding": "UTF-8"
+  },
+  "CS": {
+    "name": "CS",
+    "languageName": "Czech",
+    "encoding": "UTF-8"
+  },
+  "IT": {
+    "name": "IT",
+    "languageName": "Italiano",
+    "encoding": "UTF-8"
+  },
+  "PH": {
+    "name": "PH",
+    "languageName": "Tagalog - Filipino",
+    "encoding": "UTF-8"
+  },
+  "AR": {
+    "name": "AR",
+    "languageName": "Espanol (AR) - Argentina Spanish",
+    "encoding": "UTF-8"
+  },
+  "RO": {
+    "name": "RO",
+    "languageName": "Romanian",
+    "encoding": "UTF-8"
+  },
+  "FI": {
+    "name": "FI",
+    "languageName": "Finnish",
     "encoding": "UTF-8"
   },
   "UA": {
