@@ -36,7 +36,7 @@ for filename in os.listdir(TRANSLATION_FILES_DIR):
             keys = data.get('keys', [])
             keys.append({
                 "name": "$schema",
-                "description": "A reference to the JSON schema file."
+                "description": "A reference to the translation JSON schema file."
             })
             properties = {}
             for k in keys:

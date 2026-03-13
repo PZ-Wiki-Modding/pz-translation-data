@@ -160,7 +160,7 @@
       },
       {
         "name": "$schema",
-        "description": "A reference to the JSON schema file."
+        "description": "A reference to the translation JSON schema file."
       }
     ]
   },
@@ -389,7 +389,7 @@
       },
       {
         "name": "$schema",
-        "description": "A reference to the JSON schema file."
+        "description": "A reference to the translation JSON schema file."
       }
     ]
   },
