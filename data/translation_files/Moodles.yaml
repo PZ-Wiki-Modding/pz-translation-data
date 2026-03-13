@@ -1,8 +1,9 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: Moodles
 description: Moodles status and descriptions translations
 keyPrefix: Moodles_
 fileName: Moodles
 function: getText
+patternProperties:
+- pattern: ^Moodles_[A-Za-z0-9_]+$
+- pattern: ^\$

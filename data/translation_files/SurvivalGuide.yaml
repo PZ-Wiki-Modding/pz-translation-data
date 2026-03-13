@@ -1,8 +1,9 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: SurvivalGuide
 description: Survival guide translations.
 keyPrefix: SurvivalGuide_
 fileName: SurvivalGuide
 function: getText
+patternProperties:
+- pattern: ^SurvivalGuide_[A-Za-z0-9_]+$
+- pattern: ^\$

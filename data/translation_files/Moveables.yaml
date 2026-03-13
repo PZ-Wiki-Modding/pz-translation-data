@@ -1,7 +1,8 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: Moveables
 description: Moveable tiles as items translations.
 fileName: Moveables
 function: Translator.getMoveableDisplayName
+patternProperties:
+- pattern: ^[A-Za-z0-9_!\s]+$
+- pattern: ^\$

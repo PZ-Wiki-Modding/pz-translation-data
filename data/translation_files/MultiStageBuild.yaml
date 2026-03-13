@@ -1,8 +1,9 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: MultiStageBuild
 description: Translations for multi stage build.
 keyPrefix: MultiStageBuild_
 fileName: MultiStageBuild
 function: Translator.getMultiStageBuild
+patternProperties:
+- pattern: ^MultiStageBuild_[A-Za-z0-9_]+$
+- pattern: ^\$

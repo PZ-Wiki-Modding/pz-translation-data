@@ -1,8 +1,9 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: RecipeGroups
 description: ''
 keyPrefix: RecipeGroup_
 fileName: RecipeGroups
 function: Translator.getRecipeGroupName
+patternProperties:
+- pattern: ^RecipeGroup_[A-Za-z]+$
+- pattern: ^\$

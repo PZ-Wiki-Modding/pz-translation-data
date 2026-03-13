@@ -1,8 +1,9 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: ContextMenu
 description: Translations used in the context menus of the game.
 fileName: ContextMenu
 keyPrefix: ContextMenu_
 function: getText
+patternProperties:
+- pattern: ^[A-Za-z0-9_\s/]+$
+- pattern: ^\$

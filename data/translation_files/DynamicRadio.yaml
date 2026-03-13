@@ -1,8 +1,9 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: DynamicRadio
 description: Dynamic radio translations.
 fileName: DynamicRadio
 keyPrefix: AEBS_
 function: getRadioText
+patternProperties:
+- pattern: ^AEBS_[A-Za-z0-9_]+$
+- pattern: ^\$

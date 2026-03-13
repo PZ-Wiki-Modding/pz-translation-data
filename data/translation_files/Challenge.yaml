@@ -1,8 +1,9 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: Challenge
 description: ''
 fileName: Challenge
 keyPrefix: Challenge_
 function: getText
+patternProperties:
+- pattern: ^Challenge_[A-Za-z0-9\s]+(_[A-Za-z0-9]+|InfoBox)$
+- pattern: ^\$

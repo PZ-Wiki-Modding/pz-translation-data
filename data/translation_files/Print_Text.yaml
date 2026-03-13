@@ -1,5 +1,3 @@
-# yaml-language-server: $schema=../../schemas/translation_files.json
-
 version: 1
 name: Print_Text
 description: Raw text content for media items such as newspapers, describing their
@@ -7,3 +5,6 @@ description: Raw text content for media items such as newspapers, describing the
 keyPrefix: Print_Text_
 fileName: Print_Text
 function: getText
+patternProperties:
+- pattern: ^Print_Text_[A-Za-z0-9_]+$
+- pattern: ^\$
