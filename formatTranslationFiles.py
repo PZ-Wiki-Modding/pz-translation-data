@@ -5,6 +5,7 @@ SCRIPT_DIR = os.path.join(os.path.dirname(__file__))
 TRANSLATION_FILES_DIR = os.path.join(SCRIPT_DIR, 'data', 'translation_files')
 OUTPUT_FILE = os.path.join(SCRIPT_DIR, 'data', 'translationFiles.json')
 SCHEMAS_DIR = os.path.join(SCRIPT_DIR, 'PZ_Translation_Schemas', r"{key}.schema.json")
+DEFAULT_SETTINGS_FILE = os.path.join(SCRIPT_DIR, 'settings.json')
 
 translation_files = {}
 for filename in os.listdir(TRANSLATION_FILES_DIR):
@@ -66,3 +67,29 @@ for file_key, file_data in translation_files.items():
 os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     json.dump(translation_files, f, indent=2, ensure_ascii=False)
+
+DEFAULT_SETTINGS = {
+    "json.schemas": [],
+    "json.schemaDownload.trustedDomains": {
+        "https://raw.githubusercontent.com/SirDoggyJvla/pz-translation-data": True
+    }
+}
+
+TEMPLATE_FILE_SCHEMA_SETTING = {
+    "fileMatch": [r"**/media/lua/shared/Translate/*/{fileName}.json"],
+    "url": r"https://raw.githubusercontent.com/SirDoggyJvla/pz-translation-data/refs/heads/main/PZ_Translation_Schemas/{fileName}.schema.json",
+    "name": r"PZ {fileName} translation schema"
+}
+
+for file_key, file_data in translation_files.items():
+    setting = TEMPLATE_FILE_SCHEMA_SETTING.copy()
+    fileName = file_data.get('fileName', None)
+    if not fileName:
+        continue
+    setting['fileMatch'] = [pattern.format(fileName=fileName) for pattern in setting['fileMatch']]
+    setting['url'] = setting['url'].format(fileName=fileName)
+    setting['name'] = setting['name'].format(fileName=fileName)
+    DEFAULT_SETTINGS["json.schemas"].append(setting)
+
+with open(DEFAULT_SETTINGS_FILE, 'w', encoding='utf-8') as settings_file:
+    json.dump(DEFAULT_SETTINGS, settings_file, indent=2, ensure_ascii=False)
