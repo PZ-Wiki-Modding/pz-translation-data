@@ -71,13 +71,13 @@ with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
 DEFAULT_SETTINGS = {
     "json.schemas": [],
     "json.schemaDownload.trustedDomains": {
-        "https://raw.githubusercontent.com/SirDoggyJvla/pz-translation-data": True
+        "https://raw.githubusercontent.com/pz-wiki-modding/pz-translation-data": True
     }
 }
 
 TEMPLATE_FILE_SCHEMA_SETTING = {
     "fileMatch": [r"**/media/lua/shared/Translate/*/{fileName}.json"],
-    "url": r"https://raw.githubusercontent.com/SirDoggyJvla/pz-translation-data/refs/heads/main/PZ_Translation_Schemas/{fileName}.schema.json",
+    "url": r"https://raw.githubusercontent.com/pz-wiki-modding/pz-translation-data/refs/heads/main/PZ_Translation_Schemas/{fileName}.schema.json",
     "name": r"PZ {fileName} translation schema"
 }
 
