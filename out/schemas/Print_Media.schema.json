@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Print_Media.json Schema",
+  "description": "Text content for media items such as newspapers, describing their content.",
+  "type": "object",
+  "patternProperties": {
+    "^Print_Media_[A-Za-z0-9_]+$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

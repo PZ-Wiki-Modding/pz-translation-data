@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Sandbox.json Schema",
+  "description": "Sandbox options translations.",
+  "type": "object",
+  "patternProperties": {
+    "^Sandbox_[A-Za-z0-9_]+(_option[0-9]+|_tooltip)?$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GameSound.json Schema",
+  "description": "Game sounds and categories translations.",
+  "type": "object",
+  "patternProperties": {
+    "^GameSound_[A-Za-z0-9_]+$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

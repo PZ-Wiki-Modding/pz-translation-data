@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "<Location_Generic>.json Schema",
+  "description": "A translation file for the map. The filename needs to refer the file \"map.info\" in the mod's media folder.",
+  "type": "object",
+  "patternProperties": {},
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The name of the map."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the map. Can use rich text tags."
+    },
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContextMenu.json Schema",
+  "description": "Translations used in the context menus of the game.",
+  "type": "object",
+  "patternProperties": {
+    "^ContextMenu_[A-Za-z0-9_]+$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

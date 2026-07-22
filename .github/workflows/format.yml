@@ -1,0 +1,52 @@
+name: Format Translation and Language Code Files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/translation_files/**'
+      - 'data/language_codes/**'
+      - 'chores/formatTranslationFiles.py'
+      - 'chores/formatLanguageCodes.py'
+      - '.github/workflows/format.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/translation_files/**'
+      - 'data/language_codes/**'
+      - 'chores/formatTranslationFiles.py'
+      - 'chores/formatLanguageCodes.py'
+      - '.github/workflows/format.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.0.0
+          
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.14'
+          
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Run formatTranslationFiles
+        run: python chores/formatTranslationFiles.py
+
+      - name: Run formatLanguageCodes
+        run: python chores/formatLanguageCodes.py
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "CHORES: Format translation files" || echo "No changes to commit"
+          git push

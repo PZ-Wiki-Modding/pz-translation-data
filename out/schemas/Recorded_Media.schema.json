@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recorded_Media.json Schema",
+  "description": "Recorded media translations with the key being a GUID of the media text.",
+  "type": "object",
+  "patternProperties": {
+    "^RM_[A-Za-z0-9_-]+$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Moodles.json Schema",
+  "description": "Moodles status and descriptions translations",
+  "type": "object",
+  "patternProperties": {
+    "^Moodles_[A-Za-z0-9_]+(_desc)?_lvl0-9$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

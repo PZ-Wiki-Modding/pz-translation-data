@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IG_UI.json Schema",
+  "description": "Translations for in-game user interface elements.",
+  "type": "object",
+  "patternProperties": {
+    "^IGUI_[A-Za-z0-9_\\s:\\.\\/'!-]+$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

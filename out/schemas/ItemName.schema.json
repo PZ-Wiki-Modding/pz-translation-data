@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ItemName.json Schema",
+  "description": "Translations for item scripts. The key needs to be the full type of the item.",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Za-z0-9_]+\\.[A-Za-z0-9_]+$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Challenge.json Schema",
+  "description": "",
+  "type": "object",
+  "patternProperties": {
+    "^Challenge_[A-Za-z0-9\\s]+(_[A-Za-z0-9]+|InfoBox)$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

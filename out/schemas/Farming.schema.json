@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Farming.json Schema",
+  "description": "Translations for farming menus.",
+  "type": "object",
+  "patternProperties": {
+    "^Farming_[A-Za-z0-9_\\s-]+$": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}
