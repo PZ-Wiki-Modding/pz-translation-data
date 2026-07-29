@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Credits_Translator.json Schema",
+  "description": "Provides the names of the translators for the specific language code. This is basically useless for mods and only used by the game.",
+  "type": "object",
+  "patternProperties": {},
+  "properties": {
+    "Translator": {
+      "type": "string",
+      "description": "The name of the translators, separated by a newline character `\\n`."
+    },
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

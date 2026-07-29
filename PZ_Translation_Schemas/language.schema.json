@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "language.json Schema",
+  "description": "Used to define a new language for the game. It needs to be stored inside a folder named after the new language code, and the file itself must be named \"language.json\". ",
+  "type": "object",
+  "patternProperties": {},
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "The version of the parser. Keep as 1."
+    },
+    "language_name": {
+      "type": "string",
+      "description": "A description of the mod."
+    },
+    "$schema": {
+      "type": "string",
+      "description": "A reference to the translation JSON schema file."
+    }
+  },
+  "additionalProperties": false
+}

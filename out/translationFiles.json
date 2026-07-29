@@ -1,13 +1,47 @@
 {
-  "Recorded_Media": {
-    "name": "Recorded_Media",
-    "description": "Recorded media translations with the key being a GUID of the media text.",
-    "keyPrefix": "RM_",
-    "fileName": "Recorded_Media",
+  "Tooltip": {
+    "name": "Tooltip",
+    "description": "Tooltips used for UIs.",
+    "keyPrefix": "Tooltip_",
+    "fileName": "Tooltip",
     "function": "getText",
     "patternProperties": [
       {
-        "pattern": "^RM_[A-Za-z0-9_-]+$"
+        "pattern": "^Tooltip_[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "Farming": {
+    "name": "Farming",
+    "description": "Translations for farming menus.",
+    "fileName": "Farming",
+    "keyPrefix": "Farming_",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^Farming_[A-Za-z0-9_\\s-]+$"
+      }
+    ]
+  },
+  "EvolvedRecipeName": {
+    "name": "EvolvedRecipeName",
+    "description": "Translations for evolved recipe scripts.",
+    "fileName": "EvolvedRecipeName",
+    "function": "Translator.getItemEvolvedRecipeName",
+    "patternProperties": [
+      {
+        "pattern": "^[A-Za-z0-9_]+\\.[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "MakeUp": {
+    "name": "MakeUp",
+    "description": "Translations for make up.",
+    "fileName": "MakeUp",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^MakeUp(Category|Type)_[A-Za-z0-9]+$"
       }
     ]
   },
@@ -23,30 +57,29 @@
       }
     ]
   },
-  "Print_Text": {
-    "name": "Print_Text",
-    "description": "Raw text content for media items such as newspapers, describing their content.",
-    "keyPrefix": "Print_Text_",
-    "fileName": "Print_Text",
+  "SurvivorNames": {
+    "name": "SurvivorNames",
+    "description": "All possible automatic character names. Used for random name generation of the player character or for zombies.",
+    "fileName": "SurvivorNames",
     "function": "getText",
     "patternProperties": [
       {
-        "pattern": "^Print_Text_[A-Za-z0-9_]+$"
+        "pattern": "^Survivor(Name|Surname)_[A-Za-z0-9_\\s\\.'-]+$"
       }
     ]
   },
-  "Mod": {
-    "name": "Mod",
-    "description": "Translations for the mod.info file. Possible keys are \"name\" and \"description\".",
-    "fileName": "Mod",
+  "language": {
+    "name": "language",
+    "description": "Used to define a new language for the game. It needs to be stored inside a folder named after the new language code, and the file itself must be named \"language.json\". ",
+    "fileName": "language",
     "keys": [
       {
-        "name": "name",
-        "description": "The name of the mod."
+        "name": "version",
+        "description": "The version of the parser. Keep as 1."
       },
       {
-        "name": "description",
-        "description": "A description of the mod. Can use rich text tags."
+        "name": "language_name",
+        "description": "A description of the mod."
       },
       {
         "name": "$schema",
@@ -54,123 +87,15 @@
       }
     ]
   },
-  "DynamicRadio": {
-    "name": "DynamicRadio",
-    "description": "Dynamic radio translations.",
-    "fileName": "DynamicRadio",
-    "keyPrefix": "AEBS_",
-    "function": "getRadioText",
-    "patternProperties": [
-      {
-        "pattern": "^AEBS_[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "MakeUp": {
-    "name": "MakeUp",
-    "description": "Translations for make up.",
-    "fileName": "MakeUp",
+  "Recorded_Media": {
+    "name": "Recorded_Media",
+    "description": "Recorded media translations with the key being a GUID of the media text.",
+    "keyPrefix": "RM_",
+    "fileName": "Recorded_Media",
     "function": "getText",
     "patternProperties": [
       {
-        "pattern": "^MakeUp(Category|Type)_[A-Za-z0-9]+$"
-      }
-    ]
-  },
-  "UI": {
-    "name": "UI",
-    "description": "Translation file for user interface elements.",
-    "keyPrefix": "UI_",
-    "fileName": "UI",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^UI_[A-Za-z0-9_\\s/\\-]+$"
-      }
-    ]
-  },
-  "Moodles": {
-    "name": "Moodles",
-    "description": "Moodles status and descriptions translations",
-    "keyPrefix": "Moodles_",
-    "fileName": "Moodles",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^Moodles_[A-Za-z0-9_]+(_desc)?_lvl0-9$"
-      }
-    ]
-  },
-  "SurvivalGuide": {
-    "name": "SurvivalGuide",
-    "description": "Survival guide translations.",
-    "keyPrefix": "SurvivalGuide_",
-    "fileName": "SurvivalGuide",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^SurvivalGuide_[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "Recipes": {
-    "name": "Recipes",
-    "description": "Translations for the craftRecipe scripts. The key needs to be the ID of the craftRecipe block.",
-    "fileName": "Recipes",
-    "function": "getRecipeDisplayName",
-    "patternProperties": [
-      {
-        "pattern": "^[A-Za-z0-9_\\(\\): -]+$"
-      }
-    ]
-  },
-  "Print_Media": {
-    "name": "Print_Media",
-    "description": "Text content for media items such as newspapers, describing their content.",
-    "keyPrefix": "Print_Media_",
-    "fileName": "Print_Media",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^Print_Media_[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "Tooltip": {
-    "name": "Tooltip",
-    "description": "Tooltips used for UIs.",
-    "keyPrefix": "Tooltip_",
-    "fileName": "Tooltip",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^Tooltip_[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "Attributes": {
-    "name": "Attributes",
-    "description": "",
-    "fileName": "Attributes",
-    "fileStarter": "Attributes_",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^Attributes_Type_[A-Za-z_]+$"
-      },
-      {
-        "pattern": "^Attributes_ToosltipOverride_[A-Za-z_]+$"
-      }
-    ]
-  },
-  "EvolvedRecipeName": {
-    "name": "EvolvedRecipeName",
-    "description": "Translations for evolved recipe scripts.",
-    "fileName": "EvolvedRecipeName",
-    "function": "Translator.getItemEvolvedRecipeName",
-    "patternProperties": [
-      {
-        "pattern": "^[A-Za-z0-9_]+\\.[A-Za-z0-9_]+$"
+        "pattern": "^RM_[A-Za-z0-9_-]+$"
       }
     ]
   },
@@ -186,15 +111,109 @@
       }
     ]
   },
-  "Entity": {
-    "name": "Entity",
-    "description": "Translations for entity UIs.",
-    "fileName": "Entity",
-    "keyPrefix": "EC_",
+  "GameSound": {
+    "name": "GameSound",
+    "description": "Game sounds and categories translations.",
+    "fileName": "GameSound",
+    "keyPrefix": "GameSound_",
     "function": "getText",
     "patternProperties": [
       {
-        "pattern": "^EC_[A-Za-z_]+$"
+        "pattern": "^GameSound_[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "Moodles": {
+    "name": "Moodles",
+    "description": "Moodles status and descriptions translations",
+    "keyPrefix": "Moodles_",
+    "fileName": "Moodles",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^Moodles_[A-Za-z0-9_]+(_desc)?_lvl0-9$"
+      }
+    ]
+  },
+  "Credits_Translator": {
+    "name": "Credits_Translator",
+    "description": "Provides the names of the translators for the specific language code. This is basically useless for mods and only used by the game.",
+    "fileName": "Credits_Translator",
+    "keys": [
+      {
+        "name": "Translator",
+        "description": "The name of the translators, separated by a newline character `\\n`."
+      },
+      {
+        "name": "$schema",
+        "description": "A reference to the translation JSON schema file."
+      }
+    ],
+    "added": {
+      "version": {
+        "major": 42,
+        "minor": 20,
+        "patch": 0
+      }
+    }
+  },
+  "ContextMenu": {
+    "name": "ContextMenu",
+    "description": "Translations used in the context menus of the game.",
+    "fileName": "ContextMenu",
+    "keyPrefix": "ContextMenu_",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^ContextMenu_[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "Stash": {
+    "name": "Stash",
+    "description": "Survivor maps translations.",
+    "keyPrefix": "Stash_",
+    "fileName": "Stash",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^Stash_[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "SurvivalGuide": {
+    "name": "SurvivalGuide",
+    "description": "Survival guide translations.",
+    "keyPrefix": "SurvivalGuide_",
+    "fileName": "SurvivalGuide",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^SurvivalGuide_[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "UI": {
+    "name": "UI",
+    "description": "Translation file for user interface elements.",
+    "keyPrefix": "UI_",
+    "fileName": "UI",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^UI_[A-Za-z0-9_\\s/\\-]+$"
+      }
+    ]
+  },
+  "RecipeGroups": {
+    "name": "RecipeGroups",
+    "description": "",
+    "keyPrefix": "RecipeGroup_",
+    "fileName": "RecipeGroups",
+    "function": "Translator.getRecipeGroupName",
+    "patternProperties": [
+      {
+        "pattern": "^RecipeGroup_[A-Za-z]+$"
       }
     ]
   },
@@ -221,90 +240,6 @@
       }
     ]
   },
-  "RecipeGroups": {
-    "name": "RecipeGroups",
-    "description": "",
-    "keyPrefix": "RecipeGroup_",
-    "fileName": "RecipeGroups",
-    "function": "Translator.getRecipeGroupName",
-    "patternProperties": [
-      {
-        "pattern": "^RecipeGroup_[A-Za-z]+$"
-      }
-    ]
-  },
-  "RadioData": {
-    "name": "RadioData",
-    "description": "Radio translations with the key being a GUID of the radio text.",
-    "keyPrefix": "RD_",
-    "fileName": "RadioData",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^RD_[a-f0-9-]+$"
-      }
-    ]
-  },
-  "GameSound": {
-    "name": "GameSound",
-    "description": "Game sounds and categories translations.",
-    "fileName": "GameSound",
-    "keyPrefix": "GameSound_",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^GameSound_[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "Sandbox": {
-    "name": "Sandbox",
-    "description": "Sandbox options translations.",
-    "keyPrefix": "Sandbox_",
-    "fileName": "Sandbox",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^Sandbox_[A-Za-z0-9_]+(_option[0-9]+|_tooltip)?$"
-      }
-    ]
-  },
-  "ContextMenu": {
-    "name": "ContextMenu",
-    "description": "Translations used in the context menus of the game.",
-    "fileName": "ContextMenu",
-    "keyPrefix": "ContextMenu_",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^ContextMenu_[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "Stash": {
-    "name": "Stash",
-    "description": "Survivor maps translations.",
-    "keyPrefix": "Stash_",
-    "fileName": "Stash",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^Stash_[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "MapLabel": {
-    "name": "MapLabel",
-    "description": "",
-    "keyPrefix": "MapLabel_",
-    "fileName": "MapLabel",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^MapLabel_[A-Za-z]+$"
-      }
-    ]
-  },
   "ItemName": {
     "name": "ItemName",
     "description": "Translations for item scripts. The key needs to be the full type of the item.",
@@ -313,35 +248,6 @@
     "patternProperties": [
       {
         "pattern": "^[A-Za-z0-9_]+\\.[A-Za-z0-9_]+$"
-      }
-    ]
-  },
-  "SurvivorNames": {
-    "name": "SurvivorNames",
-    "description": "All possible automatic character names. Used for random name generation of the player character or for zombies.",
-    "fileName": "SurvivorNames",
-    "function": "getText",
-    "patternProperties": [
-      {
-        "pattern": "^Survivor(Name|Surname)_[A-Za-z0-9_\\s\\.'-]+$"
-      }
-    ]
-  },
-  "Location_Generic": {
-    "name": "Location_Generic",
-    "description": "A translation file for the map. The filename needs to refer the file \"map.info\" in the mod's media folder.",
-    "keys": [
-      {
-        "name": "title",
-        "description": "The name of the map."
-      },
-      {
-        "name": "description",
-        "description": "A description of the map. Can use rich text tags."
-      },
-      {
-        "name": "$schema",
-        "description": "A reference to the translation JSON schema file."
       }
     ]
   },
@@ -369,15 +275,150 @@
       }
     ]
   },
-  "Farming": {
-    "name": "Farming",
-    "description": "Translations for farming menus.",
-    "fileName": "Farming",
-    "keyPrefix": "Farming_",
+  "Entity": {
+    "name": "Entity",
+    "description": "Translations for entity UIs.",
+    "fileName": "Entity",
+    "keyPrefix": "EC_",
     "function": "getText",
     "patternProperties": [
       {
-        "pattern": "^Farming_[A-Za-z0-9_\\s-]+$"
+        "pattern": "^EC_[A-Za-z_]+$"
+      }
+    ]
+  },
+  "Recipes": {
+    "name": "Recipes",
+    "description": "Translations for the craftRecipe scripts. The key needs to be the ID of the craftRecipe block.",
+    "fileName": "Recipes",
+    "function": "getRecipeDisplayName",
+    "patternProperties": [
+      {
+        "pattern": "^[A-Za-z0-9_\\(\\): -]+$"
+      }
+    ]
+  },
+  "Print_Media": {
+    "name": "Print_Media",
+    "description": "Text content for media items such as newspapers, describing their content.",
+    "keyPrefix": "Print_Media_",
+    "fileName": "Print_Media",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^Print_Media_[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "Print_Text": {
+    "name": "Print_Text",
+    "description": "Raw text content for media items such as newspapers, describing their content.",
+    "keyPrefix": "Print_Text_",
+    "fileName": "Print_Text",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^Print_Text_[A-Za-z0-9_]+$"
+      }
+    ]
+  },
+  "Attributes": {
+    "name": "Attributes",
+    "description": "",
+    "fileName": "Attributes",
+    "fileStarter": "Attributes_",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^Attributes_Type_[A-Za-z_]+$"
+      },
+      {
+        "pattern": "^Attributes_ToosltipOverride_[A-Za-z_]+$"
+      }
+    ]
+  },
+  "Location_Generic": {
+    "name": "Location_Generic",
+    "description": "A translation file for the map. The filename needs to refer the file \"map.info\" in the mod's media folder.",
+    "keys": [
+      {
+        "name": "title",
+        "description": "The name of the map."
+      },
+      {
+        "name": "description",
+        "description": "A description of the map. Can use rich text tags."
+      },
+      {
+        "name": "$schema",
+        "description": "A reference to the translation JSON schema file."
+      }
+    ]
+  },
+  "MapLabel": {
+    "name": "MapLabel",
+    "description": "",
+    "keyPrefix": "MapLabel_",
+    "fileName": "MapLabel",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^MapLabel_[A-Za-z]+$"
+      }
+    ]
+  },
+  "Mod": {
+    "name": "Mod",
+    "description": "Translations for the mod.info file. Possible keys are \"name\" and \"description\".",
+    "fileName": "Mod",
+    "keys": [
+      {
+        "name": "name",
+        "description": "The name of the mod."
+      },
+      {
+        "name": "description",
+        "description": "A description of the mod. Can use rich text tags."
+      },
+      {
+        "name": "$schema",
+        "description": "A reference to the translation JSON schema file."
+      }
+    ]
+  },
+  "Sandbox": {
+    "name": "Sandbox",
+    "description": "Sandbox options translations.",
+    "keyPrefix": "Sandbox_",
+    "fileName": "Sandbox",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^Sandbox_[A-Za-z0-9_]+(_option[0-9]+|_tooltip)?$"
+      }
+    ]
+  },
+  "RadioData": {
+    "name": "RadioData",
+    "description": "Radio translations with the key being a GUID of the radio text.",
+    "keyPrefix": "RD_",
+    "fileName": "RadioData",
+    "function": "getText",
+    "patternProperties": [
+      {
+        "pattern": "^RD_[a-f0-9-]+$"
+      }
+    ]
+  },
+  "DynamicRadio": {
+    "name": "DynamicRadio",
+    "description": "Dynamic radio translations.",
+    "fileName": "DynamicRadio",
+    "keyPrefix": "AEBS_",
+    "function": "getRadioText",
+    "patternProperties": [
+      {
+        "pattern": "^AEBS_[A-Za-z0-9_]+$"
       }
     ]
   }
