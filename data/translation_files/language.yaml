@@ -10,3 +10,7 @@ keys:
     description: The version of the parser. Keep as 1.
   - name: language_name
     description: A description of the mod.
+  - name: azerty
+    description: A boolean value indicating whether the keyboard layout is azerty or not.
+  - name: base
+    description: Unknown
