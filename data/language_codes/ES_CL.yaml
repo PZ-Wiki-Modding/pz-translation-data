@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=../../.schemas/language_codes.json
 
 version: 1
-name: PH
-languageName: Tagalog - Filipino
+name: ES_CL
+languageName: Español (Chile) - Chilean Spanish
 encoding: UTF-8
-deprecated:
-  version: 
+added:
+  version:
     major: 42
     minor: 20
     patch: 0

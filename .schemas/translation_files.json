@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Translation Files Schema",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "version": { "type": ["number", "string"] },
     "name": { 
@@ -19,6 +20,55 @@
     "keyPrefix": { 
       "type": "string",
       "description": "The prefix used for the keys in the translation files."
+    },
+    "function": {
+      "type": "string",
+      "description": "The global function used in Lua to retrieve the translation."
+    },
+    "patternProperties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pattern"],
+        "additionalProperties": false,
+        "properties": {
+          "pattern": { "type": "string" }
+        }
+      }
+    },
+    "keys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { 
+            "type": "string" 
+          },
+          "description": { 
+            "type": "string" 
+          }
+        }
+      }
+    },
+    "deprecated": {
+      "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {
+          "$ref": "language_codes.json#/$defs/version"
+        }
+      }
+    },
+    "added": {
+      "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {
+          "$ref": "language_codes.json#/$defs/version"
+        }
+      }
     }
   }
 }

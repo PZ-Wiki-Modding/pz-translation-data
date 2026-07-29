@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../.schemas/translation_files.json
+
+version: 1
+name: Credits_Translator
+description: Provides the names of the translators for the specific language code. This is basically useless for mods and only used by the game.
+fileName: Credits_Translator
+keys:
+  - name: Translator
+    description: The name of the translators, separated by a newline character `\n`.
+added:
+  version:
+    major: 42
+    minor: 20
+    patch: 0

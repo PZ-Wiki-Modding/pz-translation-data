@@ -2,6 +2,20 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Language Codes Schema",
   "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "name", "languageName", "encoding"],
+  "$defs": {
+    "version": {
+      "type": ["object"],
+      "description": "A version of the game with major, minor, and patch numbers for `major.minor.patch`.",
+      "required": ["major", "minor", "patch"],
+      "properties": {
+        "major": { "type": "number" },
+        "minor": { "type": "number" },
+        "patch": { "type": "number" }
+      }
+    }
+  },
   "properties": {
     "version": { "type": ["number", "string"] },
     "name": { 
@@ -15,6 +29,24 @@
     "encoding": {
       "type": "string",
       "description": "The text file encoding needed for this language."
+    },
+    "deprecated": {
+      "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {
+          "$ref": "#/$defs/version"
+        }
+      }
+    },
+    "added": {
+      "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {
+          "$ref": "#/$defs/version"
+        }
+      }
     }
   }
 }

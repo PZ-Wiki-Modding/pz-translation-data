@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../.schemas/translation_files.json
+
+version: 1
+name: language
+description: |-
+  Used to define a new language for the game. It needs to be stored inside a folder named after the new language code, and the file itself must be named "language.json". 
+fileName: language
+keys:
+  - name: version
+    description: The version of the parser. Keep as 1.
+  - name: language_name
+    description: A description of the mod.
