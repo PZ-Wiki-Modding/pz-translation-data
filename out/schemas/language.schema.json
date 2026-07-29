@@ -13,6 +13,14 @@
       "type": "string",
       "description": "A description of the mod."
     },
+    "azerty": {
+      "type": "string",
+      "description": "A boolean value indicating whether the keyboard layout is azerty or not."
+    },
+    "base": {
+      "type": "string",
+      "description": "Unknown"
+    },
     "$schema": {
       "type": "string",
       "description": "A reference to the translation JSON schema file."
